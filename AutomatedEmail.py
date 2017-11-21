@@ -18,7 +18,7 @@ try:
 	server.ehlo()                               #Clause for the SMTP server to introduce itself with the client with Authorized Certificates 
 	server.starttls()                           #Used for Secure Email Communication
 	server.login(gmail_user,gmail_passwd)       #Autenticate User Provided Credentials
-	server.sendmail(sent_from,toaddr,email_text)  #Sends mail 
+	server.sendmail(sent_from,toaddr,email_text)#Sends mail 
 	server.close()
 	print("Email sent")
 	
